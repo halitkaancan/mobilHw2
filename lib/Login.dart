@@ -56,7 +56,7 @@ class _loginState extends State<login> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 80),
+              padding: const EdgeInsets.symmetric(horizontal: 80),
               child: Column(
                 children: [
                   Text(
@@ -87,14 +87,14 @@ class _loginState extends State<login> {
                       }
                     },
                     decoration: InputDecoration(
-                      border: OutlineInputBorder(),
+                      border: const OutlineInputBorder(),
                       focusedBorder: OutlineInputBorder(
                         borderSide: BorderSide(color: _textFieldColor),
                       ),
                       hintText: 'SMS Code',
                     ),
                   ),
-                  SizedBox(height: 80),
+                  const SizedBox(height: 80),
                   ElevatedButton(
                     onPressed: () {
                       _isButtonEnabled
@@ -102,7 +102,7 @@ class _loginState extends State<login> {
                           : Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => withoutLogin()));
+                                  builder: (context) => const withoutLogin()));
 
                       // Perform actions when the button is pressed
                     },
